@@ -1,0 +1,13 @@
+in server.js 
+Please update these lines below
+
+const config = {
+  user: 'sa', #Replace with username
+  password: 'Harish@23', #Replace with DB password
+  server: '192.168.29.161', #Replace with DB SERVER
+  database: 'tempdb', # Replace with DaTAbase name
+  options: {
+    encrypt: false, // Use encryption (for Azure SQL, remove this if not needed)
+  },
+
+
