@@ -11,5 +11,12 @@ npm install http-server --save
 docker build -t my-frontend .
 docker run -d -p 8080:80 my-frontend
 how access using htpp://localhost:8080
+Run this below query on the database ssms
+USE tempdb; -- You may change the database name if needed
 
-
+-- Create the Users table
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    Username NVARCHAR(255) NOT NULL,
+    Password NVARCHAR(255) NOT NULL
+);
