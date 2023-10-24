@@ -10,4 +10,14 @@ const config = {
     encrypt: false, // Use encryption (for Azure SQL, remove this if not needed)
   },
 
+cd Backend
+npm init -y  
+npm install express --save
+npm install bcrypt
+npm install bcrypt --save
+npm install mssql --save
+docker build -t my-backend .
+docker run -p 3000:3000 --name mybackend my-backend
+
+
 
